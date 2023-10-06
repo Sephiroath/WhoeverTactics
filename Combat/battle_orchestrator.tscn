@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://1uah7myun43j"]
+
+[ext_resource type="Script" path="res://Combat/battle_orchestrator.gd" id="1_gavpm"]
+[ext_resource type="PackedScene" uid="uid://bh7jledt80ju0" path="res://Combat/Monsters/Bosses/headless_horse_woman.tscn" id="2_nksiq"]
+[ext_resource type="Script" path="res://Combat/Monsters/Bosses/boss.gd" id="3_5yie1"]
+[ext_resource type="Script" path="res://Combat/UnitPositions.gd" id="4_cbjvy"]
+
+[sub_resource type="Resource" id="Resource_t4c0l"]
+script = ExtResource("3_5yie1")
+hp = 0
+mp = 0
+ap = 0
+health_regen = 0
+mp_regen = 0
+ap_regen = 0
+BossBody = ExtResource("2_nksiq")
+
+[sub_resource type="Resource" id="Resource_6b5yu"]
+script = ExtResource("4_cbjvy")
+B_AllyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+M_AllyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+F_AllyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+B_AllyParty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+M_AllyParty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+F_AllyParty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+B_EnemyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+M_EnemyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+F_EnemyParty_1 = Array[Resource("res://Combat/generic_unit.gd")]([])
+B_EnemyParty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+M_Enemyarty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+F_EnemyParty_2 = Array[Resource("res://Combat/generic_unit.gd")]([])
+firstBoss = SubResource("Resource_t4c0l")
+
+[node name="BattleOrchestrator" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gavpm")
+unit_positions = SubResource("Resource_6b5yu")

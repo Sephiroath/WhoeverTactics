@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckjsrbnuxym36"]
+
+[ext_resource type="Script" path="res://Combat/Monsters/Bosses/boss_component.gd" id="1_v7fws"]
+
+[node name="BossComponent" type="Node2D"]
+script = ExtResource("1_v7fws")

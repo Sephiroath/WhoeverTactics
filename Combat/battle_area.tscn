@@ -1,0 +1,258 @@
+[gd_scene load_steps=7 format=3 uid="uid://dn3yme0axhf84"]
+
+[ext_resource type="Script" path="res://Combat/battle_area.gd" id="1_p24an"]
+[ext_resource type="PackedScene" uid="uid://cgp5lelusuaeo" path="res://Combat/Heroes/hero_squire.tscn" id="2_y4hke"]
+[ext_resource type="Texture2D" uid="uid://bondb67bt3jnx" path="res://Assets/Characters/Weapons/1H Sword Broken King A above.png" id="3_1sjkx"]
+[ext_resource type="Texture2D" uid="uid://c4m0iycm7dtky" path="res://Assets/Characters/Humanoids/Squire/Kai 1B[anim].png" id="4_4hhb6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j325s"]
+size = Vector2(52, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5a6rt"]
+size = Vector2(88, 48)
+
+[node name="BattleArea" type="Node2D"]
+position = Vector2(-35, -14)
+script = ExtResource("1_p24an")
+
+[node name="Battlers_Main" type="Node2D" parent="."]
+position = Vector2(-18, -38)
+
+[node name="Ally_LB_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(488, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_LB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_MB_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(488, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_MB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_RN_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(488, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_RN_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_LM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(547, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_LM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_MM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(547, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_MM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_RM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(547, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_RM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_LF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(604, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_LF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="HeroMelee" parent="Battlers_Main/Ally_LF_UnitPosition" instance=ExtResource("2_y4hke")]
+
+[node name="Ally_MF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(604, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_MF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="HeroMelee" parent="Battlers_Main/Ally_MF_UnitPosition" instance=ExtResource("2_y4hke")]
+characterWeapon = ExtResource("3_1sjkx")
+Hero = ExtResource("4_4hhb6")
+
+[node name="Ally_RF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(604, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Ally_RF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(726, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_RF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(726, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_MF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LF_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(726, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_LF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(785, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_RM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(785, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_MM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LM_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(785, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_LM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RB_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(842, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_RB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MB_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(842, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_MB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LB_UnitPosition" type="Area2D" parent="Battlers_Main"]
+position = Vector2(842, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main/Enemy_LB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Battlers_Main2" type="Node2D" parent="."]
+position = Vector2(-18, 120)
+
+[node name="Ally_LB_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(488, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_LB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_MB_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(488, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_MB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_RN_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(488, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_RN_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_LM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(547, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_LM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_MM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(547, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_MM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_RM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(547, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_RM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_LF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(604, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_LF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_MF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(604, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_MF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Ally_RF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(604, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Ally_RF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(726, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_RF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(726, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_MF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LF_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(726, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_LF_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(785, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_RM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(785, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_MM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LM_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(785, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_LM_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_RB_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(842, 342)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_RB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_MB_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(842, 385)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_MB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="Enemy_LB_UnitPosition" type="Area2D" parent="Battlers_Main2"]
+position = Vector2(842, 424)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Battlers_Main2/Enemy_LB_UnitPosition"]
+shape = SubResource("RectangleShape2D_j325s")
+
+[node name="BossArea" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(906, 346)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BossArea"]
+shape = SubResource("RectangleShape2D_5a6rt")
+
+[node name="BossArea2" type="Area2D" parent="."]
+unique_name_in_owner = true
+position = Vector2(906, 504)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BossArea2"]
+shape = SubResource("RectangleShape2D_5a6rt")

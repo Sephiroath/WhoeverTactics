@@ -1,0 +1,266 @@
+[gd_scene load_steps=62 format=3 uid="uid://bh7jledt80ju0"]
+
+[ext_resource type="Texture2D" uid="uid://cls1n6mxhrl0m" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_00.png" id="1_0ure6"]
+[ext_resource type="Script" path="res://Combat/Monsters/Bosses/headless_horse_woman.gd" id="1_tafkw"]
+[ext_resource type="Texture2D" uid="uid://cf50i6xyjx68x" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_01.png" id="2_qmlsy"]
+[ext_resource type="Texture2D" uid="uid://j6uvu8ejbupp" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_02.png" id="3_uhrd7"]
+[ext_resource type="Texture2D" uid="uid://3grumu4qlkqn" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_03.png" id="4_i4ouc"]
+[ext_resource type="Texture2D" uid="uid://dbnwolj0ffx6r" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_04.png" id="5_n4b5w"]
+[ext_resource type="Texture2D" uid="uid://dhhonax26gx8i" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_05.png" id="6_lbqda"]
+[ext_resource type="Texture2D" uid="uid://kgci5bvhna70" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_06.png" id="7_adipc"]
+[ext_resource type="Texture2D" uid="uid://bx6enycia2tae" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_07.png" id="8_tgc3v"]
+[ext_resource type="Texture2D" uid="uid://duujln2n7lxjp" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_08.png" id="9_7fm27"]
+[ext_resource type="Texture2D" uid="uid://cqj2nrpsglsg8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_09.png" id="10_ccehx"]
+[ext_resource type="Texture2D" uid="uid://dcxahxma65lyv" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_10.png" id="11_n2iof"]
+[ext_resource type="Texture2D" uid="uid://blf3c2p8wmu6j" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_11.png" id="12_71n3w"]
+[ext_resource type="Texture2D" uid="uid://66yivdfnkfd8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_12.png" id="13_pj8og"]
+[ext_resource type="Texture2D" uid="uid://bjd2xdghdbdcq" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_13.png" id="14_t7275"]
+[ext_resource type="Texture2D" uid="uid://d1avposfhsb5h" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_14.png" id="15_o16r5"]
+[ext_resource type="Texture2D" uid="uid://ui6j36nrvfxf" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_15.png" id="16_vti5o"]
+[ext_resource type="Texture2D" uid="uid://bdxcnu3f5l3s8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_16.png" id="17_blm8x"]
+[ext_resource type="Texture2D" uid="uid://c5822frihgjag" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_17.png" id="18_x5lx8"]
+[ext_resource type="Texture2D" uid="uid://d3jw4pyswhqqe" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_18.png" id="19_b433n"]
+[ext_resource type="Texture2D" uid="uid://h708p8fe5g82" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_19.png" id="20_tq6dn"]
+[ext_resource type="Texture2D" uid="uid://cbs2myt4yslhq" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_20.png" id="21_bmpwo"]
+[ext_resource type="Texture2D" uid="uid://do7onh3xm3jme" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_21.png" id="22_8a5a5"]
+[ext_resource type="Texture2D" uid="uid://d0jthabbwtiu3" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_22.png" id="23_cue7n"]
+[ext_resource type="Texture2D" uid="uid://c5mxh4bjvcj2a" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_23.png" id="24_be4lm"]
+[ext_resource type="Texture2D" uid="uid://cwhg3jn0ufdjd" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_24.png" id="25_0d15r"]
+[ext_resource type="Texture2D" uid="uid://bgcukrj0nv7jn" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_25.png" id="26_2q3fs"]
+[ext_resource type="Texture2D" uid="uid://ba6njgt4bkca" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_26.png" id="27_67qbm"]
+[ext_resource type="Texture2D" uid="uid://cr3hws2st2lyg" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_27.png" id="28_x3bj4"]
+[ext_resource type="Texture2D" uid="uid://dtxsfkm61b45h" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_28.png" id="29_e6olt"]
+[ext_resource type="Texture2D" uid="uid://b7tox3p6ebere" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_29.png" id="30_murde"]
+[ext_resource type="Texture2D" uid="uid://cwlrdlfr5fvy" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_30.png" id="31_u2f1q"]
+[ext_resource type="Texture2D" uid="uid://bkld08ehm7o8x" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_31.png" id="32_wybgo"]
+[ext_resource type="Texture2D" uid="uid://c48qflaed1wwc" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_32.png" id="33_1t36n"]
+[ext_resource type="Texture2D" uid="uid://bgh7ebjix4kj5" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_33.png" id="34_hqkix"]
+[ext_resource type="Texture2D" uid="uid://6dr6s1v3grwq" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_34.png" id="35_bnspy"]
+[ext_resource type="Texture2D" uid="uid://puxqltg6t0mp" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_35.png" id="36_x57uu"]
+[ext_resource type="Texture2D" uid="uid://c8pytcob0py4l" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_36.png" id="37_qinte"]
+[ext_resource type="Texture2D" uid="uid://dd77bityee351" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_37.png" id="38_ypylq"]
+[ext_resource type="Texture2D" uid="uid://cppg2cm52ig67" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_38.png" id="39_uwkdy"]
+[ext_resource type="Texture2D" uid="uid://bw1w0k4iffak8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_39.png" id="40_statr"]
+[ext_resource type="Texture2D" uid="uid://bvr26gukq3kxc" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_40.png" id="41_vbgcq"]
+[ext_resource type="Texture2D" uid="uid://cq00jv7gdil61" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_41.png" id="42_he8ss"]
+[ext_resource type="Texture2D" uid="uid://bwqjt320lc30d" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_42.png" id="43_uyxa4"]
+[ext_resource type="Texture2D" uid="uid://d0gl4eettdubq" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_43.png" id="44_yodqs"]
+[ext_resource type="Texture2D" uid="uid://b46lwf43lc6y8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_44.png" id="45_uyhrf"]
+[ext_resource type="Texture2D" uid="uid://cn27ugwfo32jy" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_45.png" id="46_afoe3"]
+[ext_resource type="Texture2D" uid="uid://eigwpxac0ctj" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_46.png" id="47_7khfv"]
+[ext_resource type="Texture2D" uid="uid://dqclytwm5l23q" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_47.png" id="48_o7mpi"]
+[ext_resource type="Texture2D" uid="uid://vkngqoefgjco" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_48.png" id="49_4r8hw"]
+[ext_resource type="Texture2D" uid="uid://cta1gkaoyc5cq" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_49.png" id="50_5ruuk"]
+[ext_resource type="Texture2D" uid="uid://clm6wpcmokidy" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_50.png" id="51_t4m3j"]
+[ext_resource type="Texture2D" uid="uid://dod1j36mxpqbu" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_51.png" id="52_0qfs6"]
+[ext_resource type="Texture2D" uid="uid://cjlpa6qnuocra" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_52.png" id="53_l861h"]
+[ext_resource type="Texture2D" uid="uid://c1eobb4he7g4l" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_53.png" id="54_n5vt0"]
+[ext_resource type="Texture2D" uid="uid://3pyegc0dv8t0" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_54.png" id="55_namry"]
+[ext_resource type="Texture2D" uid="uid://bvxctrd24tiu8" path="res://Assets/Monsters/Bosses/HeadlessHorseWoman/HeadlessHorseWomanR-Idle_55.png" id="56_ip0ce"]
+[ext_resource type="Texture2D" uid="uid://01xwlyug3ldu" path="res://Assets/GUI/Target/TargetSelected.png" id="59_don2g"]
+[ext_resource type="Texture2D" uid="uid://s5xodaco0rmk" path="res://Assets/GUI/Target/TargetAvailable.png" id="60_udwo2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xdfy1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0ure6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_qmlsy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uhrd7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_i4ouc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_n4b5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lbqda")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_adipc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tgc3v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7fm27")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ccehx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_n2iof")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_71n3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_pj8og")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_t7275")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_o16r5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_vti5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_blm8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_x5lx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_b433n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_tq6dn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_bmpwo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8a5a5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cue7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_be4lm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_0d15r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_2q3fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_67qbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_x3bj4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_e6olt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_murde")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_u2f1q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_wybgo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_1t36n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_hqkix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_bnspy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_x57uu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_qinte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_ypylq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_uwkdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_statr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_vbgcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_he8ss")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uyxa4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_yodqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_uyhrf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_afoe3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_7khfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_o7mpi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_4r8hw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_5ruuk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_t4m3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_0qfs6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_l861h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_n5vt0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_namry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ip0ce")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6w2oy"]
+size = Vector2(90.5061, 90.7063)
+
+[node name="HeadlessHorseWoman" type="StaticBody2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_tafkw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -253)
+sprite_frames = SubResource("SpriteFrames_xdfy1")
+animation = &"idle"
+frame_progress = 0.429105
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.0713882, 0.070137)
+rotation = -0.798055
+shape = SubResource("RectangleShape2D_6w2oy")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+offset_left = -66.0
+offset_top = -66.0
+offset_right = 69.0
+offset_bottom = 69.0
+toggle_mode = true
+texture_normal = ExtResource("60_udwo2")
+texture_pressed = ExtResource("59_don2g")
+texture_hover = ExtResource("60_udwo2")
+stretch_mode = 3
